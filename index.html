@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rulate - Мои закладки</title>
+        <link rel="stylesheet" href="./assets/scss/main.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="navbar bg-white">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div
+                            class="navbar__content row d-flex align-items-end">
+                            <div class="navbar__brand col-4">
+                                <a href="./index.html"><img
+                                        src="./assets/img/logo.svg"
+                                        alt="logo"></a>
+                            </div>
+                            <div class="navbar__links col-3">
+                                <nav>
+                                    <ul
+                                        class="d-flex align-items-end list-unstyled">
+                                        <li><a
+                                                class="mx-3 fw-semibold text-dark text-decoration-none"
+                                                href="#">Топ</a></li>
+                                        <li><a
+                                                class="mx-3 fw-semibold text-dark text-decoration-none"
+                                                href="#">Каталог</a></li>
+                                        <li><a
+                                                class="mx-3 fw-semibold text-dark text-decoration-none"
+                                                href="#">Сообщество</a></li>
+                                        <li><a class="mx-3"
+                                                href="#"><img
+                                                    src="./assets/img/ico/search.svg"
+                                                    alt="search"></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div
+                                class="navbar__social col-5 d-flex align-items-center justify-content-end">
+                                <div class="navbar__social-coin mx-3">
+                                    <a
+                                        class="text-decoration-none fw-bold color-link"
+                                        href="#"><img class="px-1"
+                                            src="./assets/img/ico/coin.svg"
+                                            alt="coin">600000.05</a>
+                                </div>
+                                <div
+                                    class="navbar__social-setting d-flex align-items-center">
+                                    <a
+                                        class="navbar__social-setting-item bg-green mx-1"
+                                        href="#"><img
+                                            src="./assets/img/ico/pen.svg"
+                                            alt="pen"></a>
+                                    <a
+                                        class="navbar__social-setting-item bg-gray mx-1"
+                                        href="#"><img
+                                            src="./assets/img/ico/bookmarks.svg"
+                                            alt="bookmarks"></a>
+                                    <a
+                                        class="navbar__social-setting-item bg-gray mx-1"
+                                        href="#"><img
+                                            src="./assets/img/ico/notification.svg"
+                                            alt="notification"></a>
+                                    <a
+                                        class="navbar__social-setting-item bg-gray mx-1"
+                                        href="#"><img
+                                            src="./assets/img/ico/light.svg"
+                                            alt="light"></a>
+                                    <a
+                                        class="mx-1" href="#"><img
+                                            src="./assets/img/profile.webp"
+                                            alt="profile"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="bookmarks my-5">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="bookmarks__content">
+                            <div class="bookmarks__intro">
+                                <h1 class="fs-4 text-center fw-bold my-5">Мои
+                                    закладки</h1>
+                            </div>
+                            <div class="bookmarks__search my-5">
+                                <div class="bookmarks__search-wrapper">
+                                    <form action="#" class>
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="bookmarks__search-item d-flex align-items-center bg-white p-3 rounded form-control">
+                                                <img
+                                                    src="./assets/img/ico/search.svg"
+                                                    alt="search" class="wh-18">
+                                                <input type="search"
+                                                    name="search"
+                                                    id="search"
+                                                    placeholder="Поиск"
+                                                    class="border-0 outline-0 mx-2 w-100">
+                                            </div>
+                                            <div
+                                                class="bookmarks__search-filter d-flex align-items-center mx-3">
+                                                <button
+                                                    class="bg-transparent border-0">
+                                                    <img
+                                                        src="./assets/img/ico/filter.png"
+                                                        alt="filter">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div
+                                    class="bookmarks__search-options my-3 bg-white p-3 rounded">
+                                    <form action="#">
+                                        <div
+                                            class="bookmarks__option-wrapper  d-flex justify-content-between">
+                                            <div
+                                                class="bookmarks__option-item w-100">
+                                                <label
+                                                    class="text-secondary-emphasis fs-14 color-gray"
+                                                    for="type_bookmarks">Тип
+                                                    закладки</label>
+                                                <select
+                                                    class="form-select fs-14 p-3 bg-gray border-0 my-1"
+                                                    id="type_bookmarks">
+                                                    <option
+                                                        selected>Все</option>
+                                                    <option
+                                                        value="1">Первый</option>
+                                                    <option
+                                                        value="2">Второй</option>
+                                                    <option
+                                                        value="3">Третий</option>
+                                                </select>
+                                            </div>
+                                            <div
+                                                class="bookmarks__option-item w-100 mx-3">
+                                                <label
+                                                    class="text-secondary-emphasis fs-14 color-gray"
+                                                    for="type_bookmarks_sort">Сортировать
+                                                    по:</label>
+                                                <select
+                                                    class="form-select fs-14 p-3 bg-gray border-0 my-1"
+                                                    id="type_bookmarks_sort">
+                                                    <option selected>Выберите из
+                                                        списка</option>
+                                                    <option
+                                                        value="1">Первый</option>
+                                                    <option
+                                                        value="2">Второй</option>
+                                                    <option
+                                                        value="3">Третий</option>
+                                                </select>
+                                            </div>
+                                            <div
+                                                class="bookmarks__option-item w-100">
+                                                <label
+                                                    class="text-secondary-emphasis fs-14 color-gray"
+                                                    for="type_bookmarks_old">Возрастной
+                                                    рейтинг:</label>
+                                                <select
+                                                    class="form-select fs-14 p-3 bg-gray border-0 fw-bold my-1"
+                                                    id="type_bookmarks_old">
+                                                    <option selected>Только
+                                                        18+</option>
+                                                    <option
+                                                        value="1">Первый</option>
+                                                    <option
+                                                        value="2">Второй</option>
+                                                    <option
+                                                        value="3">Третий</option>
+                                                </select>
+                                            </div>
+                                            <div
+                                                class="bookmarks__option-item mx-3">
+                                                <label
+                                                    class="text-secondary-emphasis fs-14 color-gray"
+                                                    for="bookmarks_sort">Порядок:</label>
+                                                <div
+                                                    class="bookmarks__option-btn d-flex align-items-center my-1"
+                                                    id="bookmarks_sort">
+                                                    <button
+                                                        class="btn border wh-5744">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="21"
+                                                            height="20"
+                                                            viewBox="0 0 21 20"
+                                                            fill="none">
+                                                            <g
+                                                                clip-path="url(#clip0_5165_37436)">
+                                                                <path
+                                                                    d="M6.78047 6.85938L10.6055 10.676L14.4305 6.85938L15.6055 8.03437L10.6055 13.0344L5.60547 8.03437L6.78047 6.85938Z"
+                                                                    fill="#999999" />
+                                                            </g>
+                                                            <defs>
+                                                                <clippath
+                                                                    id="clip0_5165_37436">
+                                                                    <rect
+                                                                        width="20"
+                                                                        height="20"
+                                                                        fill="white"
+                                                                        transform="translate(0.75)" />
+                                                                </clippath>
+                                                            </defs>
+                                                        </svg>
+                                                    </button>
+                                                    <button
+                                                        class="btn border wh-5744 mx-2">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="21"
+                                                            height="20"
+                                                            viewBox="0 0 21 20"
+                                                            fill="none">
+                                                            <g
+                                                                clip-path="url(#clip0_5165_44211)">
+                                                                <path
+                                                                    d="M14.2195 13.1406L10.3945 9.32396L6.56953 13.1406L5.39453 11.9656L10.3945 6.96562L15.3945 11.9656L14.2195 13.1406Z"
+                                                                    fill="#999999" />
+                                                            </g>
+                                                            <defs>
+                                                                <clippath
+                                                                    id="clip0_5165_44211">
+                                                                    <rect
+                                                                        width="20"
+                                                                        height="20"
+                                                                        fill="white"
+                                                                        transform="translate(20.25 20) rotate(-180)" />
+                                                                </clippath>
+                                                            </defs>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bookmarks__option-btn my-3">
+                                            <button
+                                                class="btn bg-blue text-white rounded-3 p-2">Найти</button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold mx-2 rounded-3 p-2">Сбросить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="bookmarks__cards d-flex flex-column gap-3">
+                                <div
+                                    class="bookmarks__card-item bg-white p-3 rounded">
+                                    <div class="bookmarks__intro d-flex">
+                                        <div class="bookmarks__img">
+                                            <img
+                                                src="./assets/img/card-img.webp"
+                                                alt="card-img">
+                                        </div>
+                                        <div class="bookmarks__intro-item mx-3">
+                                            <h2
+                                                class="fs-5 fw-bold color-link">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</h2>
+                                            <p
+                                                class="fw-semibold color-black">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</p>
+                                            <div
+                                                class="bookmarks__intro-btn d-flex gap-3">
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/chapter.svg"
+                                                        alt="chapter">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Новые главы: 144
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/cart.svg"
+                                                        alt="cart">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Открытых новых глав: 56
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bookmarks__footer">
+                                        <div
+                                            class="bookmarks__btn-wrapper d-flex align-items-center my-3 gap-3">
+                                            <select
+                                                class="form-select bg-gray border-0 w-auto">
+                                                <option selected>Читаю</option>
+                                                <option
+                                                    value="1">Первый</option>
+                                                <option
+                                                    value="2">Второй</option>
+                                                <option
+                                                    value="3">Третий</option>
+                                            </select>
+                                            <button
+                                                class="btn bg-blue text-white">
+                                                Продолжить
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/non-notification.svg"
+                                                    alt="non-notification">
+                                                Отписаться
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/close-small.svg"
+                                                    alt="close-small">
+                                                Удалить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bookmarks__card-item bg-white p-3 rounded">
+                                    <div class="bookmarks__intro d-flex">
+                                        <div class="bookmarks__img">
+                                            <img
+                                                src="./assets/img/card-img.webp"
+                                                alt="card-img">
+                                        </div>
+                                        <div class="bookmarks__intro-item mx-3">
+                                            <h2
+                                                class="fs-5 fw-bold color-link">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</h2>
+                                            <p
+                                                class="fw-semibold color-black">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</p>
+                                            <div
+                                                class="bookmarks__intro-btn d-flex gap-3">
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/chapter.svg"
+                                                        alt="chapter">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Новые главы: 144
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/cart.svg"
+                                                        alt="cart">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Открытых новых глав: 56
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bookmarks__footer">
+                                        <div
+                                            class="bookmarks__btn-wrapper d-flex align-items-center my-3 gap-3">
+                                            <select
+                                                class="form-select bg-gray border-0 w-auto">
+                                                <option selected>Читаю</option>
+                                                <option
+                                                    value="1">Первый</option>
+                                                <option
+                                                    value="2">Второй</option>
+                                                <option
+                                                    value="3">Третий</option>
+                                            </select>
+                                            <button
+                                                class="btn bg-blue text-white">
+                                                Продолжить
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/non-notification.svg"
+                                                    alt="non-notification">
+                                                Отписаться
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/close-small.svg"
+                                                    alt="close-small">
+                                                Удалить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bookmarks__card-item bg-white p-3 rounded">
+                                    <div class="bookmarks__intro d-flex">
+                                        <div class="bookmarks__img">
+                                            <img
+                                                src="./assets/img/card-img.webp"
+                                                alt="card-img">
+                                        </div>
+                                        <div class="bookmarks__intro-item mx-3">
+                                            <h2
+                                                class="fs-5 fw-bold color-link">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</h2>
+                                            <p
+                                                class="fw-semibold color-black">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</p>
+                                            <div
+                                                class="bookmarks__intro-btn d-flex gap-3">
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/chapter.svg"
+                                                        alt="chapter">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Новые главы: 144
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/cart.svg"
+                                                        alt="cart">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Открытых новых глав: 56
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bookmarks__footer">
+                                        <div
+                                            class="bookmarks__btn-wrapper d-flex align-items-center my-3 gap-3">
+                                            <select
+                                                class="form-select bg-gray border-0 w-auto">
+                                                <option selected>Читаю</option>
+                                                <option
+                                                    value="1">Первый</option>
+                                                <option
+                                                    value="2">Второй</option>
+                                                <option
+                                                    value="3">Третий</option>
+                                            </select>
+                                            <button
+                                                class="btn bg-blue text-white">
+                                                Продолжить
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/non-notification.svg"
+                                                    alt="non-notification">
+                                                Отписаться
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/close-small.svg"
+                                                    alt="close-small">
+                                                Удалить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bookmarks__card-item bg-white p-3 rounded">
+                                    <div class="bookmarks__intro d-flex">
+                                        <div class="bookmarks__img">
+                                            <img
+                                                src="./assets/img/card-img.webp"
+                                                alt="card-img">
+                                        </div>
+                                        <div class="bookmarks__intro-item mx-3">
+                                            <h2
+                                                class="fs-5 fw-bold color-link">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</h2>
+                                            <p
+                                                class="fw-semibold color-black">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</p>
+                                            <div
+                                                class="bookmarks__intro-btn d-flex gap-3">
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/chapter.svg"
+                                                        alt="chapter">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Новые главы: 144
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/cart.svg"
+                                                        alt="cart">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Открытых новых глав: 56
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bookmarks__footer">
+                                        <div
+                                            class="bookmarks__btn-wrapper d-flex align-items-center my-3 gap-3">
+                                            <select
+                                                class="form-select bg-gray border-0 w-auto">
+                                                <option selected>Читаю</option>
+                                                <option
+                                                    value="1">Первый</option>
+                                                <option
+                                                    value="2">Второй</option>
+                                                <option
+                                                    value="3">Третий</option>
+                                            </select>
+                                            <button
+                                                class="btn bg-blue text-white">
+                                                Продолжить
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/non-notification.svg"
+                                                    alt="non-notification">
+                                                Отписаться
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/close-small.svg"
+                                                    alt="close-small">
+                                                Удалить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bookmarks__card-item bg-white p-3 rounded">
+                                    <div class="bookmarks__intro d-flex">
+                                        <div class="bookmarks__img">
+                                            <img
+                                                src="./assets/img/card-img.webp"
+                                                alt="card-img">
+                                        </div>
+                                        <div class="bookmarks__intro-item mx-3">
+                                            <h2
+                                                class="fs-5 fw-bold color-link">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</h2>
+                                            <p
+                                                class="fw-semibold color-black">Master
+                                                Hunter K / Профессиональный
+                                                Охотник Кей</p>
+                                            <div
+                                                class="bookmarks__intro-btn d-flex gap-3">
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/chapter.svg"
+                                                        alt="chapter">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Новые главы: 144
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="bookmarks__intro-info d-flex bg-gray-3 p-2 rounded h-40">
+                                                    <img
+                                                        class="d-flex justify-content-center align-items-center"
+                                                        src="./assets/img/ico/cart.svg"
+                                                        alt="cart">
+                                                    <p
+                                                        class="color-black fw-semibold mx-1">
+                                                        Открытых новых глав: 56
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bookmarks__footer">
+                                        <div
+                                            class="bookmarks__btn-wrapper d-flex align-items-center my-3 gap-3">
+                                            <select
+                                                class="form-select bg-gray border-0 w-auto">
+                                                <option selected>Читаю</option>
+                                                <option
+                                                    value="1">Первый</option>
+                                                <option
+                                                    value="2">Второй</option>
+                                                <option
+                                                    value="3">Третий</option>
+                                            </select>
+                                            <button
+                                                class="btn bg-blue text-white">
+                                                Продолжить
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/non-notification.svg"
+                                                    alt="non-notification">
+                                                Отписаться
+                                            </button>
+                                            <button
+                                                class="btn bg-light-gray fw-semibold d-flex align-items-center">
+                                                <img class="mx-1"
+                                                    src="./assets/img/ico/close-small.svg"
+                                                    alt="close-small">
+                                                Удалить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer__social">
+                        <div class="footer__social-wrapper d-flex gap-3">
+                            <a href="#"><img src="./assets/img/ico/vk.svg" alt="vk"></a>
+                            <a href="#"><img src="./assets/img/ico/telegram.svg" alt="telegram"></a>
+                            <a href="#"><img src="./assets/img/ico/discord.svg" alt="discord"></a>
+                        </div>
+                        <div class="footer__social-link my-3">
+                            <ul class="d-flex list-unstyled gap-3">
+                                <li><a class="text-decoration-none color-black fw-semibold" href="#">Написать в поддержку</a></li>
+                                <li><a class="text-decoration-none color-black fw-semibold" href="#">Не пополнился баланс?</a></li>
+                                <li><a class="text-decoration-none color-black fw-semibold" href="#">Услуги</a></li>
+                                <li><a class="text-decoration-none color-black fw-semibold" href="#">Команды переводчиков</a></li>
+                                <li><a class="text-decoration-none color-black fw-semibold" href="#">Предложить улучшение</a></li>
+                                <li><a class="text-decoration-none color-black fw-semibold" href="#">Контакты</a></li>
+                                <li><a class="text-decoration-none color-black fw-semibold" href="#">О нас</a></li>
+                                <li><a class="text-decoration-none color-black fw-semibold" href="#">Правила оформления книг</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__link my-4">
+                        <ul class="d-flex list-unstyled gap-3">
+                            <li><a class="text-decoration-none color-gray fw-normal" href="#">Для правообладателей</a></li>
+                            <li><a class="text-decoration-none color-gray fw-normal" href="#">Пользовательское соглашение</a></li>
+                            <li><a class="text-decoration-none color-gray fw-normal" href="#">Правила сайта</a></li>
+                            <li><a class="text-decoration-none color-gray fw-normal" href="#">Политика конфединциальности</a></li>
+                            <li><a class="text-decoration-none color-gray fw-normal" href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__subtitle d-flex flex-column gap-0 py-0">
+                        <p class="color-gray fw-normal my-0">Авторские права переводчиков – их интеллектуальная собственность.</p>
+                        <p class="color-gray fw-normal my-0">Копирование материалов сайта с платной подписки запрещено к распространению.</p>
+                        <p class="color-gray fw-normal my-0">Для жалоб и предложений: <a class="color-gray" href="emailto:welcode1@yandex.ru">welcode1yandex.ru</a>.</p>
+                    </div>
+                    <div class="footer__company my-3">
+                        <p class="color-gray fw-normal">© Rulate.Ru 2012-2024</p>
+                    </div>
+                    <div class="footer__counteruser my-3">
+                        <img src="./assets/img/ico/counter.svg" alt="counter">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
